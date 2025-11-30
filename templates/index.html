@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Linear Regression Prediction</title>
+</head>
+<body>
+    <h2>Enter Reading Score</h2>
+    <form action="/predict" method="post">
+        <input type="number" name="value" step="0.01" placeholder="Reading Score">
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if output %}
+        <h3>Predicted Math Score: {{ output }}</h3>
+    {% endif %}
+</body>
+</html>
